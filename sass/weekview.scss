@@ -1,0 +1,69 @@
+body {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+}
+
+.day-container {
+  display: inline-block;
+  width: 20%; 
+  outline: solid 1px black;  
+  text-align: center;
+  height: 100%;
+  
+  .day-header {
+    font-weight: bold; 
+    height: 5%; 
+    vertical-align: middle; 
+    border-bottom: solid 1px black; 
+  }
+  .day-body {
+        height: 95%;
+        position: relative;
+        
+        .hour-grid {
+            .hour-container {
+                height: 10%;
+                border-bottom: solid 1px #ddd;
+            }
+        }
+        
+        .hour-grid, .timeslot-container {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+        }
+        
+        .timeslot-container .timeslot {
+            background-color:green;
+            border: solid 1px black;
+            opacity: 0.5;
+            height: 200px;
+            width: 100%;
+            position: absolute;
+        }
+  }
+  
+}
+.project-list-container {
+  display: inline-block;
+  width: 20%; 
+  text-align: center;
+  height: 100%;
+  margin-left: -3px;
+  outline: solid 1px black;  
+  vertical-align: top;
+}
+.week-container {
+  display: inline-block;
+  width: 80%;
+  margin: 0px;
+  margin-left: -3px;
+  height: 100%;
+  vertical-align: top;
+}
+ 
+ 
+ 
