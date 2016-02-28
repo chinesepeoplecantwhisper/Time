@@ -37,12 +37,35 @@ body {
         }
         
         .timeslot-container .timeslot {
-            background-color:green;
+            background-color: yellow;
             border: solid 1px black;
-            opacity: 0.5;
+            opacity: 0.8;
             height: 200px;
             width: 100%;
             position: absolute;
+            
+            .content {
+                height: 96%;
+                cursor: move;
+                padding: 20px 0px;
+                font-weight: bold;
+            }
+            
+            .handle {
+                position: absolute;
+                height: 10px;
+                width: 100%;
+                
+                cursor: row-resize;
+
+                background-color: red;
+                
+                &--bottom {
+                    bottom: 0px;
+                }
+            }
+            
+            
         }
   }
   

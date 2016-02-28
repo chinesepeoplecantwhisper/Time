@@ -1,7 +1,9 @@
+import {Time} from './time';
+
 export interface Timeslot {
     id: number;
-    startDate: Date;
-    endDate: Date;
+    startTime: Time;
+    endTime: Time;
     caseNumber: string;
     description: string;
 }

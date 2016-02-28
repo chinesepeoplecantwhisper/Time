@@ -31,12 +31,25 @@ body {
       position: absolute;
       top: 0px; }
     .day-container .day-body .timeslot-container .timeslot {
-      background-color: green;
+      background-color: yellow;
       border: solid 1px black;
-      opacity: 0.5;
+      opacity: 0.8;
       height: 200px;
       width: 100%;
       position: absolute; }
+      .day-container .day-body .timeslot-container .timeslot .content {
+        height: 96%;
+        cursor: move;
+        padding: 20px 0px;
+        font-weight: bold; }
+      .day-container .day-body .timeslot-container .timeslot .handle {
+        position: absolute;
+        height: 10px;
+        width: 100%;
+        cursor: row-resize;
+        background-color: red; }
+        .day-container .day-body .timeslot-container .timeslot .handle--bottom {
+          bottom: 0px; }
 
 .project-list-container {
   display: inline-block;
